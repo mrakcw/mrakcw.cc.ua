@@ -1,2 +1,8 @@
 #Folder with downloads files
 _upload/
+assest/
+/_upload/
+/assest/
+assest/
+/_upload/*
+/assest/*
