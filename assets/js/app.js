@@ -6,8 +6,6 @@
 
 
 (function ($) {
-
-	
 	$.fn.FeedEk = function (opt) {
 		var def = $.extend({
 			MaxCount: 5,

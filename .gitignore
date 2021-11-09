@@ -1,8 +1,7 @@
 #Folder with downloads files
-_upload/
-assest/
-/_upload/
-/assest/
-assest/
-/_upload/*
-/assest/*
+#assets/
+#assests/*
+tmp/*
+_uploads/
+.vscode/extensions.json
+.vscode/*
