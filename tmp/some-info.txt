@@ -1,19 +1,64 @@
-------------------
-HEAD
-------------------
+---------------------------------------------------------------------------------------
+✅ HEAD
+---------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
 
-------------------
-BODY
-------------------
+---------------------------------------------------------------------------------------
+✅ BODY
+---------------------------------------------------------------------------------------
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
-------------------
-BULMA
-------------------
+---------------------------------------------------------------------------------------
+✅ BULMA - https://cdnjs.com/libraries/bulma
+---------------------------------------------------------------------------------------
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css.map
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css.map
+
+---------------------------------------------------------------------------------------
+✅ Helpers Bulma - https://cdnjs.com/libraries/bulma-helpers
+---------------------------------------------------------------------------------------
+https://cdnjs.cloudflare.com/ajax/libs/bulma-helpers/0.4.2/css/bulma-helpers.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma-helpers/0.4.2/css/bulma-helpers.css
+
+---------------------------------------------------------------------------------------
+✅ Tooltip Bulma - https://cdnjs.com/libraries/bulma-tooltip
+---------------------------------------------------------------------------------------
+https://cdnjs.cloudflare.com/ajax/libs/bulma-tooltip/1.2.0/bulma-tooltip.min.css
+
+---------------------------------------------------------------------------------------
+✅ Theme Bulma - https://cdnjs.com/libraries/bulmaswatch
+---------------------------------------------------------------------------------------
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/default/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/cerulean/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/cosmo/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/cyborg/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/darkly/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/flatly/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/journal/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/litera/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/lumen/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/lux/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/materia/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/minty/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/nuclear/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/pulse/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/sandstone/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/simplex/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/slate/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/solar/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/spacelab/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/superhero/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/united/bulmaswatch.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/yeti/bulmaswatch.min.css
+
+---------------------------------------------------------------------------------------
