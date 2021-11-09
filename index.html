@@ -6,14 +6,18 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="robots" content="noindex, nofollow, noarchive">
 		<meta name="theme-color" content="#ff0066">
+		<!-- Github Pages Permissions Policy -->
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/> 
 		<title>Hello Bulma!</title>
 		<meta name="description" content="Hello Bulma! Test bulma snipets">
 		<link rel="canonical" href="https://mrakcw.github.io/mrakcw.cc.ua/">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<base href="https://mrakcw.github.io/mrakcw.cc.ua/">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/cyborg/bulmaswatch.min.css">
-		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/app.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	</head>
 
@@ -30,7 +34,64 @@
 				</nav>
 			</div>
 		</section>
-
+		<hr>
+		<div class="container">
+			<div class="columns">
+				<div class="column is-one-fifth">
+					<p>Sidebar</p>
+					<br>
+					<div id="divRss" style="overflow:hidden;">
+					</div>
+				</div>
+				<div class="column">
+					<h2 class="title">RSS Feed pars</h2>
+					<p class="subtitle">Test parsing rss xml</p>
+					<div class="box">
+						<h3 class="title is-4">Some preview</h3>
+						<!-- Mrakcw profile -->
+						<div class="card">
+							<div class="card-content">
+								<div class="media">
+									<div class="media-left">
+										<figure class="image is-128x128">
+											<img src="https://avatars.githubusercontent.com/u/2831212" class="is-rounded" alt="Placeholder image">
+											<figcaption class="title is-7 has-text-centered">Some strange man 🧙‍♂️</figcaption>
+										</figure>
+									</div>
+									<div class="media-content">
+										<p class="title is-4"><a href="https://mrakcw.cc.ua" target="_blank">MrakCw Design</a></p>
+										<p class="subtitle is-6"><a href="https://codepen.io/mrakcw" target="_blank">@MrakCw</a></p>
+										<div class="content">
+											<span>MrakCw Design  👑 Some strange man 💻 Junior Frontend Developer 📌</span>
+											<!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+											<p>✅ Quality means doing it right when no one is looking 👍</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- Pars block-->
+						<div class="card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<section class="hero is-success is-fullheight">
+			<div class="hero-body">
+				<div class="container">
+					<h2 class="title">Learning Bulma case</h2>
+					<p class="subtitle">My first website with <strong>Bulma css</strong>!</p>
+				</div>
+			</div>
+		</section>
+		
 		<section class="section">
 			<!--? Buttons -->
 			<div class="container">
@@ -74,13 +135,42 @@
 			<hr>
 			<!--? columns -->
 			<div class="columns">
-				<div class="column">First column</div>
+				<div class="column"><p class="bd-notification is-primary">First column</p></div>
 				<div class="column">Second column</div>
 				<div class="column">Third column</div>
 				<div class="column">Fourth column</div>
 				<div class="column">Five column</div>
 			</div>
 		</section>
+		<!-- https://github.com/pavelk2/social-feed -->
+		<!-- https://jquery-plugins.net/FeedEk/FeedEk.html -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+			$(document).ready(function(){
+					$('#divRss').FeedEk({
+						FeedUrl : 'https://tg.i-c-a.su/rss/mr_libs'
+					});
+					
+					var r = Math.floor(Math.random()*256);
+					var g = Math.floor(Math.random()*256);
+					var b = Math.floor(Math.random()*256);
+					
+					$('#example, .itemTitle a').css("color", getHex(r,g,b));
+					$('#example').click(function() {
+							$('.itemTitle a').css("color", getHex(r,g,b));
+					});
+					
+					function intToHex(n){
+							n = n.toString(16);
+							if( n.length < 2) 
+									n = "0"+n; 
+							return n;}
+					
+					function getHex(r, g, b){ return '#'+intToHex(r)+intToHex(g)+intToHex(b); }
+			});
+		</script>
+
 	</body>
 
 </html>
