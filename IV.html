@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>$title</title>
+    <meta property="og:site_name" content="$site_name">
+    <meta property="og:description" content="$description">
+    <meta property="article:author" content="$author">
+    <!-- $image_url / link preview image is set using og:image property -->
+    <!-- <meta property="og:image" content="http://example.com/img.jpeg"> -->
+    <meta property="telegram:channel" content="@cor_bee">
+    <!-- site_verification property must be present, but @content could be empty (no IVBot-side verification for now?) -->
+    <meta property="tg:site_verification" content="g7j8/rPFXfhyrq5q0QQV7EsYWv4=">
+    <!-- published_time property must be present, but you could leave @content empty if $published_date isn't needed -->
+    <meta property="article:published_time" content="2020-02-03T23:10:04.654Z">
+</head>
+
+<body>
+    <div class="article">
+        <article class="article__content">
+            <!-- your "IV-compliant" article body goes here -->
+            <!-- for general idea of what "IV-compliant" HTML is refer to IV documentation: 
+                https://instantview.telegram.org/docs#supported-types (HTML counterpart and allowed children columns) -->
+
+            <!-- if first element in article is figure it's going to be set/used as article $cover-->
+            <!-- <figure>
+                <img src="http://example.com/img.jpeg" />
+                <figcaption>figcaption</figcaption>
+            </figure> -->
+
+            <p>Hello world</p>
+        </article>
+    </div>
+</body>
+
+</html>
+<!-- https://instantview.telegram.org/docs#instant-view-format -->

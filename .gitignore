@@ -5,3 +5,4 @@ tmp/*
 _uploads/
 .vscode/extensions.json
 .vscode/*
+assets/js/SeoInOneClick.js
