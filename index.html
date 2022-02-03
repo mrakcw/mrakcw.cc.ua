@@ -19,20 +19,67 @@
 		<link rel="stylesheet" href="./assets/css/style.css">
 		<link rel="stylesheet" href="./assets/css/app.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<style>
+			input[type="checkbox"] {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0; } 
+			nav[aria-label="main navigation"]{position:fixed;width: 100%;z-index: 9999;}
+			#menuToggle{filter:opacity(0);}
+			.navbar-brand { transform:translateX(2.5em) ; -webkit-transform:translateX(2.5em) ; -moz-transform:translateX(2.5em) ; -ms-transform:translateX(2.5em) ; -o-transform:translateX(2.5em) ; }
+			a.navbar-item img{ transform: scale(2); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2); }
+			/* nav.navbar {background: #337;} */
+			@media (max-width: 1023px){
+				#menuToggle:not(#menuToggle:checked){ opacity:0; position: absolute;left: 0;}
+				#menuToggle:checked{ opacity:1; height:100vh; position:absolute; left:-56%; top:66px; width:100%; filter:opacity(.75) ; transition: 2s  ease ; -webkit-transition: 2s  ease ; -moz-transition: 2s  ease ; -ms-transition: 2s  ease ; -o-transition: 2s  ease ; -webkit-filter:opacity(.75) ; }
+				#menuToggle:checked::after{ content: '';position:fixed; left:20%; top:0; opacity:1; height:100vh; width:100%; background-color: #000; }
+				#menuToggle:not(#menuToggle:checked) + .navbar-burger{pointer-events: none; top:66px;right: -100vw;opacity:.2;}
+				#menuToggle:checked + .navbar-burger{ top:66px;right:-7px;min-height: 96vh;}
+				.navbar-burger li{ opacity: 0; transition:opacity 0.5s 1s ease; -webkit-transition:opacity 0.5s 1s ease; -moz-transition:opacity 0.5s 1s ease; -ms-transition:opacity 0.5s 1s ease; -o-transition:opacity 0.5s 1s ease; }
+				#menuToggle:checked + .navbar-burger li{ width: 100%; margin: 0 auto; opacity: 1; transition:opacity 0.5s ease; -webkit-transition:opacity 0.5s ease; -moz-transition:opacity 0.5s ease; -ms-transition:opacity 0.5s ease; -o-transition:opacity 0.5s ease; }
+				.navbar>.container{display:flex;align-items:center;justify-content:space-between;width:98%}
+				.navbar-end.touch{display:inline-flex;}
+				.navbar-end.touch svg{width: 2.2em;height: 2.2em;}
+				.navbar-burger{ position:absolute; width:-webkit-fill-available; min-width:fit-content; height:fit-content; min-height:50px; background:#2a2a2a50; margin:auto; padding:0 1rem; display:flex; flex-direction:column; justify-content:center;z-index: 9; }
+				ul.navbar-burger{ width: 45%; display: flex; padding:.5rem; transition: all .75s ease-in; -webkit-transition: all .75s ease-in; -moz-transition: all .75s ease-in; -ms-transition: all .75s ease-in; -o-transition: all .75s ease-in; }
+			}
+			@media (min-width: 1024px){
+				.navbar-item.touch,.navbar-item.touch svg,#menuToggle{display: none;}
+				.navbar>.container{display:flex;align-items:center;justify-content:space-between;width:96%}
+				.navbar-menu{display:contents}
+			}
+		</style>
 	</head>
 
 	<body>
-		<section class="section">
-			<div class="container">
-				<h1 class="title">Learning Bulma case</h1>
-				<p class="subtitle">My first website with <strong>Bulma css</strong>!</p>
-				<nav class="breadcrumb" aria-label="breadcrumbs">
-					<ul>
-						<li><a href="/" disabled>mrakcw.cc.ua</a></li>
-						<li class="is-active"><a href="#top" aria-current="page">Library</a></li>
-					</ul>
+		<section class="hero is-halfheight pb-4">
+			<div class="hero-head ">
+				<nav class="navbar has-background-white-bis" role="navigation" aria-label="main navigation">
+					<div class="container">
+						<!-- ! LOGO -->
+						<div class="navbar-brand">
+<!-- 							<a class="navbar-item" href="/"><img src="/img/logo.svg" alt="logo" width="112" height="28"></a> -->
+							<a class="navbar-item" href="/">&copy; MrakCw</a>
+						</div>
+						<!-- ! TOGGLE MENU BURGER -->
+						<div class="navbar-end touch">
+							<label for="menuToggle" class="navbar-item touch"><svg viewBox="0 0 448 512" width="15">	<path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg></label>
+							<input id="menuToggle" type="checkbox">
+							<ul class="navbar-menu navbar-burger has-background-white-bis has-text-centered">
+								<li class="navbar-item">2022 📌</li>
+								<li class="navbar-item"><div class="button is-danger is-rounded is-outlined">🎫</div></li>
+								<li class="navbar-item"><a href="https://mrakcw.cc.ua/" class="button is-danger is-rounded is-outlined">💡 Main</a></li>
+								<li class="navbar-item"><a href="https://blog.mrakcw.cc.ua/" class="navbar-link button is-danger is-rounded is-outlined">📚 Articles</a></li>
+							</ul>
+						</div>
+					</div>
 				</nav>
 			</div>
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1 has-text-white">👑 Learning Bulma case</h1>
+					<h2 class="subtitle has-text-white">🎫 My first website with <strong>Bulma css</strong>!</h2>
+				</div>
+			</div>
+			<!-- Hero footer: will stick at the bottom -->
+			<div class="hero-foot"></div>
 		</section>
 		<hr>
 		<div class="container">
